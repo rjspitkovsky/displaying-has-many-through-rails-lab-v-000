@@ -2,13 +2,14 @@
 
 
 
-<!-- <% @patient.appointments.each do |appointment| %>
+<% @patient.appointments.each do |appointment| %>
+  <%= link_to doctor.name, doctor_path(doctor) %>
   <%= appointment.appointment_datetime.strftime("%B, %d, %Y at %H:%M") %><br>
   <%end %>
 
-  <% @patient.doctors.each do |doctor| %>
+  <!-- <% @patient.doctors.each do |doctor| %>
   <%= link_to doctor.name, doctor_path(doctor) %>
-  <% end %> -->
+  <% end %>
 
 
   <%@patient.doctors.each do |d|%>
@@ -17,4 +18,4 @@
 
   <%@patient.appointments.each do |a|%>
     <%=a.appointment_datetime.strftime("%B %d, %Y at %H:%M")%>
-  <%end%>
+  <%end%> -->
