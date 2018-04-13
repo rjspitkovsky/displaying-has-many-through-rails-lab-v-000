@@ -6,7 +6,7 @@
 
 
 <%= @doctor.appointments.each do |appointment| %>
-  <% @datetime = appointment.appointment_datetime %> 
+  <% @datetime = appointment.appointment_datetime %>
   <%= @datetime.to_formatted_s(:long)%>
   <%= link_to appointment.patient.name, patient_path(appointment.patient) %>
   <% end %>
