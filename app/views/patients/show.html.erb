@@ -3,7 +3,7 @@
 
 
 <%= @patient.appointments.each do |appointment| %>
-  
+  <%= appointment.appointment_datetime.to_formated_s(:long) %>
 
 
   </ul>
